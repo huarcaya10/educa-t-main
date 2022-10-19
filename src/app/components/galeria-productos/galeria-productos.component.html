@@ -1,0 +1,7 @@
+<p>elementos seleccionados: {{seleccionados.length}}</p>
+<div class="row">
+    <div class ="col-6"*ngFor="let producto of elementos">
+    <app-tarjeta-producto [producto]="producto"  (pressAgregar)="seleccionar($event)">
+    </app-tarjeta-producto> 
+    </div>
+</div>

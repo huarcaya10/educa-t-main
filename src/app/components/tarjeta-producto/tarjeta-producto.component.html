@@ -1,0 +1,11 @@
+<div style="panding: botton 0.5em;">
+<img [src]=producto.imagen class ="img-thumbnail" alt="imagen">
+        <div><strong>Descripcion:</strong>
+        </div>
+        <p>{{producto.descripcion}}</p>
+        <p> <strong> Precio: </strong>{{producto.precio}}</p>
+        <p> <strong> Capacidad: </strong>{{producto.capacidad}}</p>
+        <p> <strong> Nombre: </strong>{{producto.nombre}}</p>
+        <p> <strong> id: </strong>{{producto.id}}</p>
+        <button class="btn btn-primary" (click)="clickAgregar(producto.id)"> Agregar</button>
+</div>
